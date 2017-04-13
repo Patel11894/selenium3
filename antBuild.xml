@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project basedir="." default="run" name="Selenium3Project" >
+
+<property name="src.path" value="src" />
+<property name="class.path" value="bin" />
+<path id="libs">
+<fileset dir="Selenium3jars">
+<include name="*.jar" />
+</fileset>
+
+<pathelement path="${class.path}" />
+</path>
+<delete dir="bin"/>
+<mkdir dir="bin"/>
+<target name="compile">
+<javac debug="true" srcdir="${src.path}" destdir="${class.path}" classpathref="libs" includeantruntime="false">
+</javac>
+</target>
+
+<target name="run" depends="compile">
+<mkdir dir="TestReports" />
+<mkdir dir="Screen_Shots" />
+<taskdef resource="testngtasks" classpathref="libs"></taskdef>
+<testng outputdir="TestReports" classpathref="libs">
+<xmlfileset dir="." includes="testng.xml" />
+</testng>
+</target>
+</project>
