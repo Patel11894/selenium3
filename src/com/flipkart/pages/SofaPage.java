@@ -18,6 +18,18 @@ public class SofaPage {
 	@FindBy(xpath="//span[text()='check']")
 	private WebElement pinCheckButton;
 	
+	@FindBy(id="add-cart-button-id")
+	private WebElement addCardButton;
+	
+	@FindBy(className="cartInner")
+	private WebElement basketButton;
+	
+	@FindBy(className="remove-item-shortlist")
+	private WebElement removeFromCardButton;
+	
+	@FindBy(className="icon-font-grey-size24")
+	private WebElement closeButton;
+	
 	public SofaPage()
 	{
 		PageFactory.initElements(BaseTestScript.driver, this);
@@ -38,6 +50,24 @@ public class SofaPage {
 		pinCheckButton.click();
 	}
 	
+	public void clickOnAddCartButton()
+	{
+		addCardButton.click();
+	}
 	
+	public void clickOnCardBasket()
+	{
+		basketButton.click();
+	}
+	
+	public void clickOnRemoveFromcard()
+	{
+		removeFromCardButton.click();
+	}
+	
+	public void clickOnPopupClose()
+	{
+		closeButton.click();
+	}
 
 }
