@@ -5,10 +5,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.flipkart.pages.HomePage;
@@ -22,7 +18,7 @@ public class PurchaseFrige extends BaseTestScript
 	@Test
 	public void purchase() throws InvalidFormatException, IOException, InterruptedException, AWTException
 	{
-		WebDriverWait wait = new WebDriverWait(BaseTestScript.driver, 20);
+	//	WebDriverWait wait = new WebDriverWait(BaseTestScript.driver, 20);
 		String searchItem = Excel_Util.readData("userdata.xlsx", "SearchIteam", 1, 0);
 		System.out.println(searchItem);
 		double pincodeNum = Excel_Util.readNumericData("userdata.xlsx", "PincodeNum", 1, 0);
@@ -42,7 +38,7 @@ public class PurchaseFrige extends BaseTestScript
 	    sp.clickOnAddCartButton();
 	    sp.clickOnCardBasket();
 	    sp.clickOnRemoveFromcard();
-	   Thread.sleep(5000);
+	    Thread.sleep(5000);
 	    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("icon-font-grey-size24")));
 	    sp.clickOnPopupClose();
 	    Thread.sleep(5000);

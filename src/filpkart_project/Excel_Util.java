@@ -22,10 +22,8 @@ public class Excel_Util
 			Workbook wb=WorkbookFactory.create(fis);
 			Sheet sh=wb.getSheet(sheetName);
 			Row row=sh.getRow(rowNum);
-			int cellType = row.getCell(colNum).getCellType();
-			System.out.println(cellType);
-				String data=row.getCell(colNum).getStringCellValue();
-				return data;
+		    String data=row.getCell(colNum).getStringCellValue();
+		    return data;
 			
 		}
 		public static double readNumericData( String excelPath, String sheetName, int rowNum, int colNum) throws InvalidFormatException, IOException
@@ -34,9 +32,7 @@ public class Excel_Util
 			Workbook wb=WorkbookFactory.create(fis);
 			Sheet sh=wb.getSheet(sheetName);
 			Row row=sh.getRow(rowNum);
-			int cellType = row.getCell(colNum).getCellType();
-			System.out.println(cellType);
-			double nData=row.getCell(colNum).getNumericCellValue();
+		    double nData=row.getCell(colNum).getNumericCellValue();
 			return nData;
 			
 		}

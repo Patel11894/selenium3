@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import filpkart_project.BaseTestScript;
 
 
-public class HomePage {
+public class HomePage extends CommanPage {
 	
 	
 	@FindBy(id="inputValEnter")

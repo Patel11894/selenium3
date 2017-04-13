@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41246" started-at="2017-04-13T11:37:11Z" finished-at="2017-04-13T11:37:52Z">
+  <suite name="Default suite" duration-ms="45178" started-at="2017-04-13T11:54:39Z" finished-at="2017-04-13T11:55:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41246" started-at="2017-04-13T11:37:11Z" finished-at="2017-04-13T11:37:52Z">
+    <test name="Default test" duration-ms="45178" started-at="2017-04-13T11:54:39Z" finished-at="2017-04-13T11:55:24Z">
       <class name="filpkart_project.PurchaseFrige">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@55f3ddb1]" name="openBrowser" is-config="true" duration-ms="8543" started-at="2017-04-13T17:07:11Z" finished-at="2017-04-13T17:07:20Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@55f3ddb1]" name="openBrowser" is-config="true" duration-ms="10729" started-at="2017-04-13T17:24:39Z" finished-at="2017-04-13T17:24:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="purchase()[pri:0, instance:filpkart_project.PurchaseFrige@55f3ddb1]" name="purchase" duration-ms="32591" started-at="2017-04-13T17:07:20Z" finished-at="2017-04-13T17:07:52Z">
+        <test-method status="PASS" signature="purchase()[pri:0, instance:filpkart_project.PurchaseFrige@55f3ddb1]" name="purchase" duration-ms="34323" started-at="2017-04-13T17:24:50Z" finished-at="2017-04-13T17:25:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchase -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@55f3ddb1]" name="closeBrowser" is-config="true" duration-ms="83" started-at="2017-04-13T17:07:52Z" finished-at="2017-04-13T17:07:52Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@55f3ddb1]" name="closeBrowser" is-config="true" duration-ms="102" started-at="2017-04-13T17:25:24Z" finished-at="2017-04-13T17:25:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

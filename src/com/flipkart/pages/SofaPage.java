@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import filpkart_project.BaseTestScript;
 
-public class SofaPage {
+public class SofaPage extends CommanPage{
 	
 	@FindBy(xpath="//a[@pogid='641237641470']")
 	private WebElement sofalink;
@@ -21,14 +21,7 @@ public class SofaPage {
 	@FindBy(id="add-cart-button-id")
 	private WebElement addCardButton;
 	
-	@FindBy(className="cartInner")
-	private WebElement basketButton;
 	
-	@FindBy(className="remove-item-shortlist")
-	private WebElement removeFromCardButton;
-	
-	@FindBy(className="icon-font-grey-size24")
-	private WebElement closeButton;
 	
 	public SofaPage()
 	{
@@ -55,19 +48,6 @@ public class SofaPage {
 		addCardButton.click();
 	}
 	
-	public void clickOnCardBasket()
-	{
-		basketButton.click();
-	}
 	
-	public void clickOnRemoveFromcard()
-	{
-		removeFromCardButton.click();
-	}
-	
-	public void clickOnPopupClose()
-	{
-		closeButton.click();
-	}
 
 }
