@@ -40,11 +40,12 @@ public class BaseTestScript {
     public void takeReport()
     {
     	Date d1 = new Date();
+    	 
     	String cuuentDateAndTime = d1.toString().replace(':', '_');
     	
     	File src = new File("./test-output");
     	
-    	File dest = new File("./Reports" +cuuentDateAndTime +".zip");
+    	File dest = new File("./Reports/" +cuuentDateAndTime +".zip");
     	
     	Zip z = new Zip();
     	try

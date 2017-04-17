@@ -1,25 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Enter Search item]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Search button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Sofa Link]]>
+    </line>
+    <line>
+      <![CDATA[Enetr Pin Number]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on CheckPin Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Add to Card Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the Basket]]>
+    </line>
+    <line>
+      <![CDATA[Removing item from Card]]>
+    </line>
+    <line>
+      <![CDATA[Close the Popup]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the Help Center Button]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on the about us]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40402" started-at="2017-04-17T04:06:14Z" finished-at="2017-04-17T04:06:54Z">
+  <suite name="Default suite" duration-ms="45117" started-at="2017-04-17T08:46:37Z" finished-at="2017-04-17T08:47:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40402" started-at="2017-04-17T04:06:14Z" finished-at="2017-04-17T04:06:54Z">
+    <test name="Default test" duration-ms="45117" started-at="2017-04-17T08:46:37Z" finished-at="2017-04-17T08:47:22Z">
       <class name="filpkart_project.PurchaseFrige">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="openBrowser" is-config="true" duration-ms="8995" started-at="2017-04-17T09:36:14Z" finished-at="2017-04-17T09:36:23Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="openBrowser" is-config="true" duration-ms="7718" started-at="2017-04-17T14:16:37Z" finished-at="2017-04-17T14:16:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="purchase()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="purchase" duration-ms="31300" started-at="2017-04-17T09:36:23Z" finished-at="2017-04-17T09:36:54Z">
+        <test-method status="PASS" signature="purchase()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="purchase" duration-ms="37290" started-at="2017-04-17T14:16:45Z" finished-at="2017-04-17T14:17:22Z">
           <reporter-output>
+            <line>
+              <![CDATA[Enter Search item]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Search button]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Sofa Link]]>
+            </line>
+            <line>
+              <![CDATA[Enetr Pin Number]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on CheckPin Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Add to Card Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the Basket]]>
+            </line>
+            <line>
+              <![CDATA[Removing item from Card]]>
+            </line>
+            <line>
+              <![CDATA[Close the Popup]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the Help Center Button]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on the about us]]>
+            </line>
           </reporter-output>
         </test-method> <!-- purchase -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="closeBrowser" is-config="true" duration-ms="83" started-at="2017-04-17T09:36:54Z" finished-at="2017-04-17T09:36:54Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="closeBrowser" is-config="true" duration-ms="90" started-at="2017-04-17T14:17:22Z" finished-at="2017-04-17T14:17:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="takeReport()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="takeReport" is-config="true" duration-ms="24" started-at="2017-04-17T09:36:54Z" finished-at="2017-04-17T09:36:54Z">
+        <test-method status="PASS" signature="takeReport()[pri:0, instance:filpkart_project.PurchaseFrige@8bd1b6a]" name="takeReport" is-config="true" duration-ms="21" started-at="2017-04-17T14:17:22Z" finished-at="2017-04-17T14:17:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeReport -->
