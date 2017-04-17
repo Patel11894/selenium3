@@ -1,12 +1,16 @@
 package filpkart_project;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.Zip;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 public class BaseTestScript {
@@ -31,5 +35,26 @@ public class BaseTestScript {
 	{
 		  BaseTestScript.driver.quit();
 	}
+    
+    @AfterSuite
+    public void takeReport()
+    {
+    	Date d1 = new Date();
+    	String cuuentDateAndTime = d1.toString().replace(':', '_');
+    	
+    	File src = new File("./test-output");
+    	
+    	File dest = new File("./Reports" +cuuentDateAndTime +".zip");
+    	
+    	Zip z = new Zip();
+    	try
+    	{
+    	 z.zip(src, dest);	
+    	}
+    	catch(IOException e)
+    	{
+    		
+    	}
+    }
 
 }

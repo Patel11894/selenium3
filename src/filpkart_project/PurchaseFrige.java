@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.flipkart.pages.HomePage;
@@ -41,8 +45,12 @@ public class PurchaseFrige extends BaseTestScript
 	    Thread.sleep(5000);
 	    //wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("icon-font-grey-size24")));
 	    sp.clickOnPopupClose();
-	    Thread.sleep(5000);
-	   
+	    Thread.sleep(5000);    
+	    Actions act = new Actions(driver);
+	    
+	    WebElement ele = sp.clickOnHelpCenter();
+	    
+	    act.moveToElement(ele).click().perform();
 		}
 
 

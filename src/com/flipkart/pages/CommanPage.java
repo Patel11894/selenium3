@@ -18,6 +18,9 @@ public class CommanPage {
 	@FindBy(className="icon-font-grey-size24")
 	private WebElement closeButton;
 	
+	@FindBy(linkText="Help Center")
+	private WebElement helpCenterButton;
+	
 	
 	public CommanPage()
 	{
@@ -37,6 +40,11 @@ public class CommanPage {
 	public void clickOnPopupClose()
 	{
 		closeButton.click();
+	}
+	
+	public WebElement clickOnHelpCenter()
+	{
+		return helpCenterButton;
 	}
 
 }
